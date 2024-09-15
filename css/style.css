@@ -5,13 +5,13 @@
     visibility: hidden;
     transition: opacity .8s ease-out, visibility 0s linear .5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
 
 /*** Spinner End ***/
 
@@ -94,8 +94,13 @@
 }
 
 @keyframes mymove {
-    from {left: -100%;}
-    to {left: 100%;}
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 100%;
+    }
 }
 
 /*** Topbar End ***/
@@ -111,7 +116,7 @@
     color: var(--bs-white);
     font-size: 18px;
     outline: none;
-    
+
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -263,7 +268,7 @@
     .carousel-item {
         min-height: 500px;
     }
-    
+
     .carousel-item img {
         min-height: 500px;
         object-fit: cover;
@@ -282,7 +287,7 @@
     .carousel-item {
         min-height: 400px;
     }
-    
+
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
@@ -445,9 +450,10 @@
 }
 
 .blog-btn .blog-btn-icon {
-    height: 50px;
+    /* height: 50px; */
     position: relative;
     overflow: hidden;
+    padding: 0 13px;
 }
 
 .blog-btn-icon .blog-icon-2 {
@@ -455,23 +461,41 @@
     position: absolute;
     top: 6px;
     left: -140px;
-    
+
 }
 
 .blog-btn-icon:hover .blog-icon-2 {
     transition: 1s;
     left: 5px;
-    top: 6px;
+    top: 0px;
     padding-bottom: 5px;
 }
+
 .blog-icon-1 {
     position: relative;
-    top: -4px;
+    /* top: -4px; */
 }
+
 .blog-btn-icon:hover .blog-icon-1 {
     top: 0;
     right: -140px;
     transition: 1s;
+}
+
+.shard {
+    margin: 0;
+    height: 100%;
+    line-height: 44px;
+}
+
+.link_btn {
+    padding: 5px;
+}
+
+@media (max-width: 450px) {
+    .link_btn {
+        padding: 0px;
+    }
 }
 
 /*** Blog End ***/
