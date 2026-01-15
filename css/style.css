@@ -1093,7 +1093,8 @@ a {
     margin-bottom: 16px;
 }
 
-.testimonial-header img {
+.testimonial-carousel .testimonial-card .testimonial-header img {
+    flex: 0 0 56px;
     width: 56px;
     height: 56px;
     border-radius: 50%;
