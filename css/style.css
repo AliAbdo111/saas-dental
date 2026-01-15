@@ -739,6 +739,20 @@ a {
     color: var(--brand-primary) !important;
 }
 
+.brand-logo {
+    height: 42px;
+    width: auto;
+    display: block;
+}
+
+.navbar-brand .brand-logo {
+    max-height: 46px;
+}
+
+.footer-brand .brand-logo {
+    height: 36px;
+}
+
 .brand-mark {
     width: 38px;
     height: 38px;
