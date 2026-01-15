@@ -688,3 +688,501 @@
 }
 
 /*** Footer End ***/
+
+/*** Dental Landing Theme Start ***/
+:root {
+    --brand-primary: #4f7cff;
+    --brand-secondary: #8c7bff;
+    --brand-accent: #22d3c5;
+    --brand-dark: #0f172a;
+    --brand-muted: #64748b;
+    --brand-bg: #f6f8ff;
+    --brand-soft: #eef2ff;
+    --bs-primary: var(--brand-primary);
+    --bs-secondary: var(--brand-secondary);
+    --bs-dark: var(--brand-dark);
+    --bs-light: #f8faff;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--brand-bg);
+    color: #1f2937;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+    color: var(--brand-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.landing-page .navbar {
+    padding: 0;
+}
+
+.landing-page .navbar .navbar-nav .nav-link {
+    color: #1f2937;
+    font-weight: 500;
+    margin: 0 4px;
+}
+
+.landing-page .navbar .navbar-nav .nav-link:hover,
+.landing-page .navbar .navbar-nav .nav-link.active {
+    color: var(--brand-primary) !important;
+}
+
+.brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    background: linear-gradient(120deg, var(--brand-primary), var(--brand-secondary));
+    color: #ffffff;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.brand-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--brand-dark);
+}
+
+.btn-primary {
+    box-shadow: 0 16px 30px rgba(79, 124, 255, 0.2);
+}
+
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+.hero-section {
+    position: relative;
+    padding: 110px 0 80px;
+    overflow: hidden;
+    background: radial-gradient(circle at top, #ffffff 0%, #f5f7ff 40%, #eef3ff 100%);
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79, 124, 255, 0.2), transparent 70%);
+    top: -160px;
+    right: -120px;
+    z-index: 0;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    color: var(--brand-muted);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero-title {
+    font-size: clamp(2.4rem, 3vw, 3.6rem);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.05rem;
+    color: var(--brand-muted);
+}
+
+.hero-cta .btn {
+    min-width: 180px;
+}
+
+.hero-metrics .metric-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 14px 18px;
+    min-width: 160px;
+}
+
+.hero-metrics h4 {
+    margin-bottom: 4px;
+}
+
+.hero-metrics span {
+    color: var(--brand-muted);
+    font-size: 14px;
+}
+
+.hero-visual {
+    position: relative;
+}
+
+.device-stack {
+    position: relative;
+}
+
+.device-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 24px;
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+    border: 1px solid #edf0ff;
+}
+
+.device-card.large {
+    padding: 28px;
+}
+
+.device-card.floating {
+    position: absolute;
+    width: 220px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.device-card.floating.web {
+    top: -30px;
+    left: -10px;
+}
+
+.device-card.floating.mobile {
+    bottom: -40px;
+    right: 0;
+}
+
+.device-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.device-label {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brand-muted);
+}
+
+.device-status {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(34, 211, 197, 0.2);
+    color: #0f766e;
+    font-weight: 600;
+}
+
+.device-screen {
+    background: linear-gradient(135deg, #e9efff, #f3f6ff);
+    border-radius: 16px;
+    padding: 16px;
+    display: grid;
+    gap: 12px;
+}
+
+.screen-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.screen-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.screen-tag {
+    color: var(--brand-muted);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--brand-accent);
+}
+
+.dot.alt {
+    background: var(--brand-primary);
+}
+
+.device-mini-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.section-space {
+    padding: 90px 0;
+}
+
+.section-pill {
+    display: inline-flex;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(79, 124, 255, 0.12);
+    color: var(--brand-primary);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 2.4vw, 2.8rem);
+}
+
+.section-subtitle {
+    color: var(--brand-muted);
+}
+
+.trusted-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+}
+
+.trusted-strip span {
+    font-weight: 600;
+    color: var(--brand-dark);
+}
+
+.trusted-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    color: var(--brand-muted);
+    font-weight: 600;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid #edf0ff;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+}
+
+.feature-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    background: rgba(79, 124, 255, 0.12);
+    color: var(--brand-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.bg-soft {
+    background: var(--brand-soft);
+}
+
+.platform-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid #edf0ff;
+    height: 100%;
+}
+
+.platform-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    background: rgba(34, 211, 197, 0.14);
+    color: #0f766e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.platform-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.platform-card li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--brand-muted);
+}
+
+.step-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px dashed #cbd5f5;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--brand-primary);
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.workflow-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px 28px;
+    border: 1px solid #edf0ff;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 28px;
+    border: 1px solid #edf0ff;
+    height: 100%;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.testimonial-header img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-header span {
+    display: block;
+    color: var(--brand-muted);
+    font-size: 14px;
+}
+
+.testimonial-carousel .owl-dots {
+    margin-top: 20px;
+}
+
+.cta-panel {
+    background: linear-gradient(120deg, var(--brand-primary), var(--brand-secondary));
+    color: #ffffff;
+    padding: 50px;
+    border-radius: 28px;
+}
+
+.cta-panel h2,
+.cta-panel p {
+    color: #ffffff;
+}
+
+.footer-modern {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.footer-modern a {
+    color: #cbd5f5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.footer-modern h6 {
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 90px 0 60px;
+    }
+
+    .device-card.floating {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .cta-panel {
+        padding: 36px;
+    }
+}
+
+/*** Dental Landing Theme End ***/
